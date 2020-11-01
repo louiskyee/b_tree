@@ -134,15 +134,17 @@ public:
 		return false;
 	}
 	void insert(T _data) {
-		if (root != NULL)
+		p_insert(root, _data);
+		/*if (root != NULL) {
 			p_insert(root, _data);
+		}
 		else
 		{
 			root = new Node<T>;
 			root->data = _data;
 			root->left = NULL;
 			root->right = NULL;
-		}
+		}*/
 	}
 	void delete_element(T _data) {
 		p_delete(root, _data);
